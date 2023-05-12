@@ -19,11 +19,15 @@ const ERROR_STR_GEN = "Irgendetwas ging schief!"
 
 startApp()
 function startApp() {
-	output(calculator(getNum(),getNum(),getOp()));
+	output(calculator(getNum1(),getNum2(),getOp()));
 }
 
-function getNum() {
-	return parseFloat(prompt("Zahl?"));
+function getNum1() {
+	return parseFloat(prompt("Zahl1?"));
+}
+
+function getNum2() {
+	return parseFloat(prompt("Zahl2?"))
 }
 
 function getOp() {
